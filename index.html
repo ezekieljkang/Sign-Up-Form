@@ -8,29 +8,98 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-  <container class="main-container">
-    <div class="left-side-bar">
-      <img id="nature" src="nature.jpg" alt="green leaf plant in close up photography">
-      <div>
-        <img id="odin" src="odin-lined.png" alt="odin project logo">
-        <h2>
-          ODIN
-        </h2>
+  <div class="main-container" id="main-container">
+    <div class="left-container">
+      <div class="background-container">
+        <div class="footer">
+          <p>
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <div class="overlay-content">
+        <div class="logo-text">
+          <img class="logo" src="odin-lined.png" alt="">
+          <p class="text">
+            ODIN
+          </p>
+        </div>
       </div>
     </div>
-    <div class="right-side-bar">
+    <div class="right-container">
       <div class="right-text">
-        <h1>
+        <h2>
           This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          <br>
+          Sign up <em>now</em> to get started.
           <br>
           <br>
           You <em>know</em> you want to.
-        </h1>
+          <br>
+          <br>
+          <br>
+          Lets do this!
+        </h2>
+        <p>
+          Fields with * are required
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="form-group">
+          <label for="first name">First Name *</label>
+          <input type="text" id="first name" name="first name" required>
+        </div>
+        <div class="form-group">
+          <label for="last name">Last Name *</label>
+          <input min="3" type="text" id="last name" name="last name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input min="3" type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+         <label for="phone-num">Phone Number *</label>
+         <input min="3" type="text" id="phone-num" name="phone-num" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password *</label>
+          <input min="3" type="password" class="password" id="pwd" name="pwd" required>
+        </div>
+        <div class="form-group">
+         <label for="pwd-2">Confirm Password *</label>
+         <input min="3" type="password" class="password" id="pwd-2" name="pwd-2" required>
+       </div>
+       <div class="password-show-hide">
+        <button class="password-btn">
+          <i class="material-icons">
+            <span class="material-symbols-outlined">
+              visibility_off
+            </span>
+          </i>
+        </button>
+       </div>
+      </div>
+      <div>
+        <div id="message" class="invisible">
+          * Passwords do not match
+        </div>
+        <div id="successMsg" class="invisible">
+          You created your account!
+        </div>
+      </div>
+      <div class="account">
+        <button class="create-account-btn">
+          Create Account
+        </button>
+        <p>
+          Already have an account? Log in
+        </p>
       </div>
     </div>
-  </container>
+  </div>
 </body>
 <script src="main.js">
 </script>

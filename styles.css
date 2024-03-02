@@ -1,25 +1,159 @@
-.madimi-one-regular {
+body {
   font-family: "Madimi One", sans-serif, arial;
   font-weight: 400;
   font-style: normal;
 }
 
-.body {
+* {
   padding: 0;
   margin: 0;
-  border: 0;
+  box-sizing: border-box;
 }
 
 .main-container {
   display: flex;
+  width: 100%;
+  height: 100vh;
+
 }
 
-#nature {
-  max-width: 400px;
-  max-height: 800px;
+.left-container {
+  width: 33%;
+  height: auto;
 }
 
-#odin {
+.right-container {
+  width: 67%;
+  height: 100%;
+}
+
+.background-container {
   display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(nature.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 33%;
+  transform: translateY(-50%);
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.footer p {
+  font-size: 10px;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
   align-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.create-account-btn {
+  background-color: #596D48;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.create-account-btn:hover {
+  background-color: white;
+  color: #596D48;
+}
+
+a {
+  color: white;
+}
+
+.right-container {
+  padding-top: 80px;
+  padding-left: 32px;
+}
+
+.right-text {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.account {
+  padding-top: 30px;
+}
+
+.account p {
+  padding-top: 15px;
+}
+
+input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+input:focus {
+  border: 2px solid #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.invisible {
+  display: none;
+}
+
+#message {
+  color: red;
+}
+
+#successMsg {
+  color: green;
+}
+
+.password-btn {
+  padding: 5px;
+  border-radius: 30px;
+  align-items: center;
+  align-content: center;
+}
+
+.right-text p {
+  color: red;
 }
